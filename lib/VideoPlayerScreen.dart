@@ -37,8 +37,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       ),
 
       body: FutureBuilder(
-        future: null,
-        builder: (context,builder){
+        future: _initVideoPlayerFuture,
+        builder: (context,snapshot){
+          if(snapshot.connectionState == ConnectionState.done){
+
+          }
 
         },
 
